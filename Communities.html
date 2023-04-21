@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="Communities.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"><img src="SSS.jpg" alt="SSS LOGO"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="NewsDesk.html">News Desk</a></li>
+                        <li><a href="Communities.html">Communities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    
+   
+
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+    <br><br><br>
+    <div id = "buttons" class=" container">
+    <button class = "btn1"  onclick = "A1()"> St.Philip Neri's Church </button>
+    <button class = "btn1" onclick = "A2()"> St.Thomas' Church - Matale </button><br><br>
+    <button class = "btn1" onclick = "A3()"> Our lady of Holy Rosary Church - Bandirippuwa</button>
+    <button class = "btn1" onclick = "A4()"> St.Francis of Assissi Church Tangalle </button><br><br>
+    <button class = "btn1" onclick = "A5()"> St.Anthony's Church Allagollawa </button>
+    <button class = "btn1" onclick = "A6()"> Christ the King Church - Mahena </button><br><br>
+    <button class = "btn1" onclick = "A7()"> Cenacle of the divine healer - Sillali & John the Baptist Church Periyavilan, Jaffna </button>
+    <button class = "btn1" onclick = "A8()"> Novitiate </button><br><br>
+    <button class = "btn1" onclick = "A9()"> Our Lady of Voyage - Mannar </button>
+    <button class = "btn1" onclick = "A9()"> Eymard Campbell Retreat House</button>
+</div>
+<script>// Add active class to the current button (highlight it)
+    var header = document.getElementById("buttons");
+    var btns = header.getElementsByClassName("btn1");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) { 
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      this.className += " active";
+      });
+    }</script>
+
+</div><div class=" container"><br><br>
+    <h1 id="h1">Church Name</h1>
+    <img src="SSS.jpg" id="i1" alt="P" style="width:100%; height: 50%;">
+    <p id = "p1">Details about the church</p>
+    
+   </div>
+   <div class="container"><br><br>
+    <div class="rows">
+     <div class="column">
+       <div class="card">
+         <img src="SSS.jpg" id="i2" alt="J" style="width:100%" >
+         <div class="container">
+            <p id = "p2">Superior Name</p><a id="b1" href="tel:+94777683981"><button class="button">Call</button></a>
+  
+         </div>
+       </div>
+     </div>
+     <div class="rows">
+        <div class="column">
+          <div class="card">
+            <img src="SSS.jpg" id="i3" alt="J" style="width:100%" >
+            <div class="container">
+               <p id = "p3">Assistant Parish priest </p><a id="b2" href="tel:+94777683981"><button class="button">Call</button></a>
+     
+            </div>
+          </div>
+        </div>
+        
+     <script>
+
+        var h1 = document.getElementById("h1");
+        var p1 = document.getElementById("p1");
+        var p2 = document.getElementById("p2");
+        var p3 = document.getElementById("p3");
+        
+        const e1 = document.getElementById("b1");
+        const e2 = document.getElementById("b2");
+        
+        var i1 = document.getElementById("i1");
+        var i2 = document.getElementById("i2");
+        var i3 = document.getElementById("i3")
+       
+        
+        function A1() {
+            
+            h1.innerText = "St.Philip Neri's Church"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Herald "
+            p3.innerText = "Fr.Fr.Nilindra"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A2() {
+            
+            h1.innerText = "St.Thomas' Church - Matale"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Roger "
+            p3.innerText = "Fr.Rohitha"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A3() {
+            
+            h1.innerText = "Our lady of Holy Rosary Church - Bandirippuwa"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Sajeewa"
+            p3.innerText = "Fr.Samitha"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A4() {
+            
+            h1.innerText = "St.Francis of Assissi Church Tangalle"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Anton"
+            p3.innerText = "Fr.Lakshan"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A5() {
+            
+            h1.innerText = "St.Anthony's Church Allagollawa"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Aruna"
+            p3.innerText = "Fr.Oliver"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A6() {
+            
+            h1.innerText = "Christ the King Church - Mahena"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Samantha"
+            p3.innerText = "Fr.Joe"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A7() {
+            
+            h1.innerText = "Cenacle of the divine healer - Sillali & John the Baptist Church Periyavilan, Jaffna"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Marian"
+            p3.innerText = "Fr.Priyantha"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+        function A8() {
+            
+            h1.innerText = "Novitiate"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Manuel"
+            p3.innerText = "Fr.Ignatius"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+
+        function A9() {
+            
+            h1.innerText = "Our Lady of Voyage - Mannar"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Managala"
+            p3.innerText = "Fr.Hashendra"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+
+        function A10() {
+            
+            h1.innerText = "Eymard Campbell Retreat House"
+            p1.innerText = "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt se        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. ";
+            p2.innerText = "Fr.Dilan"
+            p3.innerText = "Fr.Nesan"
+            e1.href = "tel:+94777878294"
+            e2.href = "tel:+94777878293"
+            document.getElementById("i1").src="test1.jpg"
+            document.getElementById("i2").src="SSSBW.jpg"
+            document.getElementById("i3").src="SSSBW.jpg"
+            }
+
+
+            
+
+    
+     </script>
+
+   
+
+</body>
+</html>
